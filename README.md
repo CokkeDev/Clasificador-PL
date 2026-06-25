@@ -339,27 +339,6 @@ curl -X POST http://localhost:8000/api/v1/classify \
 # En backend/.env: QDRANT_IN_MEMORY=true
 ```
 
----
-
-## Fuente de Datos
-
-API REST pública del Senado de Chile:
-
-```
-https://restsil-ventanillaunica.senado.cl/v3/proyectos
-  ?desde=18/03/2020
-  &hasta=30/03/2026
-  &offset=0
-  &limit=200
-  &order=asc
-```
-
-Campos utilizados: `ID_PROYECTO`, `BOLETIN`, `SUMA`, `FECHA_INGRESO`, `INICIATIVA`, `TIPO`, `CAMARA_ORIGEN`, `AUTORES`, `MATERIAS`, `ETAPA`, `DOCUMENTO`, `LINK_PROYECTO_LEY`
-
-El campo `DOCUMENTO` contiene la URL al PDF del proyecto completo, usado por el modo de texto completo.
-
----
-
 ## Tecnologías
 
 | Componente | Tecnología |
